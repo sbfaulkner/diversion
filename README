@@ -17,7 +17,6 @@ Example
 
 ...
 # Divert emails to a common mailbox
-require 'diversion'
 config.action_mailer.divert_to = "diverted@example.com"
 ...
 
