@@ -1,2 +1,3 @@
-require 'tmail/headers'
-require 'action_mailer/diversion'
+TMail::HeaderField.send :include, TMail::DivertedHeaders
+TMail::Mail.send :include, TMail::DivertedAccessors
+ActionMailer::Base.send :include, ActionMailer::Diversion

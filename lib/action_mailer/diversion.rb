@@ -1,7 +1,11 @@
 module ActionMailer
-  class Base
-    @@divert_to = nil
-    cattr_accessor :divert_to
+  module Diversion
+    def self.included(base)
+      base.class_eval do
+        cattr_accessor :divert_to
+        alias_method_chain :deliver!, :diversion
+      end
+    end
     
     def deliver_with_diversion!(mail = @mail)
       if divert_to
@@ -25,7 +29,5 @@ module ActionMailer
       end
       deliver_without_diversion!(mail)
     end
-    
-    alias_method_chain :deliver!, :diversion
   end
 end
