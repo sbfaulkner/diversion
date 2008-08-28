@@ -19,7 +19,7 @@ doesn't deliver undesired emails.
 
 ## Installation
 
-    $ script/plugin install http://github.com/sbfaulkner/diversion.git
+    $ script/plugin install git://github.com/sbfaulkner/diversion.git
 
 ## Legal
 
