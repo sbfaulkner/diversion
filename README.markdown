@@ -21,7 +21,11 @@ doesn't deliver undesired emails.
 
     $ script/plugin install git://github.com/sbfaulkner/diversion.git
 
+## TODO
+
+- tests!
+
 ## Legal
 
 **Author:** S. Brent Faulkner <brentf@unwwwired.net>  
-**License:** Copyright &copy; 2008 unwwwired.net, released under the MIT license
+**License:** Copyright &copy; 2008-2009 unwwwired.net, released under the MIT license
